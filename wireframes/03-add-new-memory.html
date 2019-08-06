@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Family Vault</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+  </head>
+
+  <body>
+    <nav role="navigation">
+      <div>
+        <h1>FV</h1>
+      </div>
+      <ul>
+        <li><a href="05-account-settings-page.html">Account Settings</a></li>
+        <li><a href="01-landing-page.html">Log out</a></li>
+      </ul>
+    </nav>
+    <main role="main">
+      <header>
+        <h1>New Memory</h1>
+      </header>
+      <section>
+        <form>
+          <div class="form-section">
+            <label for="memory-title">Memory title</label>
+            <input type="text" name="memory-title" placeholder="1st bath" required>
+          </div>
+          <div class="form-section">
+            <label for="memory-text">Memory text</label>
+            <textarea name="memory-text" rows="10" required></textarea>
+          </div>
+          <div class="form-section">
+            <p>Select Family Member</p>
+
+            <input type="radio" name="family-member" value="0" class="family-member-radio" checked>
+            <label for="family-member">
+              <div>Skittles</div>
+            </label>
+
+            <input type="radio" name="family-member" value="1" class="family-member-radio">
+            <label for="family-member">
+              <div>Ruff</div>
+            </label>
+
+            <input type="radio" name="family-member" value="2" class="family-member-radio">
+            <label for="family-member">
+              <div>Dino</div>
+            </label>
+
+            <input type="radio" name="family-member" value="3" class="family-member-radio">
+            <label for="family-member">
+              <div>Baby Ducky</div>
+            </label>
+
+            <input type="radio" name="family-member" value="4" class="family-member-radio">
+            <label for="family-member">
+              <div>Bunny</div>
+            </label>
+          </div>
+          <div>
+            <label for="memory-media">Add Image or Video</label>
+            <br>
+            <input type="file" name="memory-media">
+          </div>
+          <div class="form-section">
+            <p class="dream-date-header">Date of Memory</p>
+            <input type="date" name="date-month" placeholder="01" min="1" max="12" required=""> 
+          </div>
+          <div class="form-section">
+            <label for="memory-tag">Memory Tag</label>
+            <input type="text" name="memory-tag" ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+    <footer role="content-info">
+      <ul>
+        <li>About</li>
+        <li>FAQ</li>
+        <li>Privacy Policy</li>
+        <li>Terms of Use</li>
+        <h6>Copyright 2019 Tardif Inc.</h6>
+      </ul>
+    </footer>
+  </body>
+</html>
